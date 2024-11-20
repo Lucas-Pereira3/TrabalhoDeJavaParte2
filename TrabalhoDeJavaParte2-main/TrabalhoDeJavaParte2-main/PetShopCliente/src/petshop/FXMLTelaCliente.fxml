@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pastajavafx.Controller.java.FXMLTelaController">
+    <children>
+        <Text layoutX="177.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro Produto">
+            <font>
+                <Font name="Arial Black" size="32.0" />
+            </font>
+        </Text>
+        <Label layoutX="21.0" layoutY="73.0" text="Produto:" />
+        <TextField fx:id="tfNome" layoutX="76.0" layoutY="69.0" prefHeight="25.0" prefWidth="326.0" />
+        <Label layoutX="23.0" layoutY="103.0" text="Valor Unirtário" />
+        <TextField fx:id="tfEmail" layoutX="105.0" layoutY="99.0" prefHeight="25.0" prefWidth="39.0" />
+        <Label layoutX="171.0" layoutY="103.0" text="Quantidade: " />
+        <TextField fx:id="tfCpf" layoutX="239.0" layoutY="99.0" prefHeight="25.0" prefWidth="61.0" />
+        <Label layoutX="320.0" layoutY="103.0" text="Estoque:" />
+        <TextField fx:id="tfRg" layoutX="367.0" layoutY="99.0" />
+        <Label layoutX="23.0" layoutY="132.0" text="Fornecedor:" />
+        <TextField fx:id="tfCnpj" layoutX="91.0" layoutY="128.0" prefHeight="25.0" prefWidth="172.0" />
+        <Label layoutX="429.0" layoutY="73.0" text="Cod:" />
+        <TextField fx:id="tfNumero" layoutX="458.0" layoutY="69.0" prefHeight="25.0" prefWidth="149.0" />
+        <Button fx:id="adicionar" layoutX="118.0" layoutY="183.0" mnemonicParsing="false" onAction="#handleAdicionar" text="Adicionar" />
+        <Button fx:id="salvar" layoutX="205.0" layoutY="183.0" mnemonicParsing="false" onAction="#handleSalvar" text="Salvar" />
+        <Button fx:id="cancelar" layoutX="270.0" layoutY="183.0" mnemonicParsing="false" onAction="#handleCancelar" text="Cancelar" />
+        <Button fx:id="excluir" layoutX="352.0" layoutY="183.0" mnemonicParsing="false" onAction="#handleExcluir" text="Excluir" />
+      <Button fx:id="proximo" layoutX="486.0" layoutY="183.0" mnemonicParsing="false" onAction="#handleProximo" text="Proximo" />
+      <TableView layoutX="38.0" layoutY="244.0" prefHeight="237.0" prefWidth="551.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label layoutX="287.0" layoutY="132.0" text="Descrição:" />
+      <TextField fx:id="tfRg1" layoutX="344.0" layoutY="128.0" prefHeight="25.0" prefWidth="266.0" />
+    </children>
+</Pane>
